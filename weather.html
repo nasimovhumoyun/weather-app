@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/icons/bootstrap-icons-1.10.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/weather.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-side">
+      
+
+      <div class="details">
+        <h2 class="temperature"></h2>
+        <h3 class="city"></h3>
+        <div class="mood">
+          <div class="icon"></i></div>
+          <p class="moodd"></p>
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <form>
+        <input type="text" id="location" placeholder="Enter location">
+        <button type="button" onclick="getWeather()"><i class="bi bi-search search"></i></button>
+      </form>
+      <div class="right-content">
+        <p class="sam">Samarkand</p>
+        <p class="tash">Tashkent</p>
+        <hr style="border: 1px solid #b8b8b8;">
+
+        <div id="weather-details">
+          <h5 style="color:#b8b8b8; font-weight: 100; ">Weather details</h5>
+          <div class="weather"><p>Cloudy</p> <p class="cloud"></p></div>
+          <div class="weather"><p>Humidity</p> <p class="humid"></p> </div>
+          <div class="weather"><p>Wind</p> <p class="wind"></p></div>
+          <!-- <div class="weather"><p> Rain</p>  <p class="rain"></p></div> -->
+        </div>
+      </div>
+      
+
+
+    </div>
+   
+  </div>
+</body>
+<script src="assets/js/weather.js"></script>
+</html>
